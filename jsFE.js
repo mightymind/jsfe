@@ -16,7 +16,7 @@ config:{
 /* --- Инициализация настроек ---*/
 init:function(params){ // app_key,api_modules
 	this.api.azbn.config.app_key=params.app_key;
-	if(params.api_modules>0) {
+	if(params.api_modules) {
 		this.f.include(this.config.api_modules_url);
 		}
 	},
